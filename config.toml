@@ -1,0 +1,40 @@
+baseurl = "https://kajarlabs.com/"
+languageCode = "en-us"
+title = "Kajar Labs"
+theme = "nederburg"
+email = "cody@codywilson.co"
+googleAnalytics = "UA-118765473-1"
+
+[params]
+    slogan = "Building IP and cloud-based audio/video tech since 2015"
+    descripton = "Kajar Labs builds IP/cloud based live audio/video production technologies."
+    author = "Cody Wilson"
+    authorLink = "https://codywilson.info"
+    bio = [
+        "Cody is a cloud and infrastructure operations engineer, and principal engineer at <a href='https://kajarlabs.com'>Kajar Labs</a>. You can find out morea bout him at his personal site, <a href='https://codywilson.co'>codywilson.co</a>."
+    ]
+    copyright = [
+        "&copy; 2018 <a href='https://codywilson.info'>Cody Wilson</a>",
+        "Kajar Labs"
+    ]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+url = "contact/"
+weight = 3
+
+# [[params.social]]
+# facebook = "https://facebook.com/belthesar"
+# twitter = "https://twitter.com/belthesar"
+# github = "https://github.com/belthesar"
+# email = "cody@codywilson.co"
