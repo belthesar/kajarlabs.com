@@ -1,40 +1,117 @@
-baseurl = "https://kajarlabs.com/"
+baseURL = "https://kajarlabs.com/"
 languageCode = "en-us"
 title = "Kajar Labs"
-theme = "nederburg"
-email = "cody@codywilson.co"
+theme = "navigator-hugo"
 googleAnalytics = "UA-118765473-1"
 
+# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "About"
+        url     = "/about"
+        weight  = 2
+    [[menu.nav]]
+        name    = "Service"
+        url     = "/service"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Portfolio"
+        url     = "/portfolio"
+        weight  = 4
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "/blog"
+        weight  = 5
+    [[menu.nav]]
+        name    = "Contact"
+        url     = "/contact"
+        weight  = 6
+    
+    # Footer Service Menu
+    [[menu.service]]
+        name    = "IPTV Studios"
+        url     = "/studios"
+        weight  = 1
+    [[menu.service]]
+        name    = "IT Foundations"
+        url     = "/services"
+        weight  = 2
+
+
+    # Footer Quick links Menu
+    [[menu.quicklink]]
+        name    = "Partners"
+        url     = "/partners"
+        weight  = 1
+    [[menu.quicklink]]
+        name    = "About"
+        url     = "/about"
+        weight  = 2
+
+
+# Site Params
 [params]
-    slogan = "Building IP and cloud-based audio/video tech since 2015"
-    descripton = "Kajar Labs builds IP/cloud based live audio/video production technologies."
-    author = "Cody Wilson"
-    authorLink = "https://codywilson.info"
-    bio = [
-        "Cody is a cloud and infrastructure operations engineer, and principal engineer at <a href='https://kajarlabs.com'>Kajar Labs</a>. You can find out morea bout him at his personal site, <a href='https://codywilson.co'>codywilson.co</a>."
-    ]
-    copyright = [
-        "&copy; 2018 <a href='https://codywilson.info'>Cody Wilson</a>",
-        "Kajar Labs"
-    ]
+    home = "Home"
+    logo = "images/kajar_labs_without_logo_white_text.svg"
+    dateFormat = "6 January 2006"
+    footerDescription = "Kajar Labs is a project focusing on next gen IP broadcasting and IT infrastructure."
 
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+    # Hero Area Section
+    [params.hero]
+        enable  = true
+        heading = "Cheaper. Better. Faster. Pick three."
+        description = "The old addage of not being able to have everything in a technology solution always rubbed us the wrong way. Cake should be something you can have and eat. Kajar Labs's passion is building solutions that don't require you to compromise. Get to know us and why we love building awesome tech."
+        button  = true
+        btnText = "Get To Know Us"
+        btnURL  = "/about"
+        videoThumb = "images/slider/video-player-thumb.jpg"
+        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
-[[menu.main]]
-name = "About"
-url = "about/"
-weight = 2
+    # About 2 Section
+    [params.aboutSm]
+        enable  = true
+        title   = "IP Broadcasting and Infrastructure-Agnostic IT Solutions"
+        description = "Kajar Labs is a project focusing on two passions: building highly available video broadcasting platforms, and deploying modern IT foundations that provide development-focused technology teams a single pane of glass between private and public cloud infrastructure."
 
-[[menu.main]]
-name = "Contact"
-url = "contact/"
-weight = 3
+    # Blog Section On Homepage
+    [params.blog]
+        enable  = true
+        topTitle= "THE CHRONICLES OF OUR JOURNEY"
+        title   = "Latest Blog"
+        subtitle= "Cody Wilson, principal engineer for Kajar Labs, blogs here about new projects he's working on, interesting technologies he's interacting with, and events coming up."
+        button = true
+        btnText = "Read More Here"
+        btnUrl = "//kajarlabs.com/blog/ndi-video-encoder"
 
-# [[params.social]]
-# facebook = "https://facebook.com/belthesar"
-# twitter = "https://twitter.com/belthesar"
-# github = "https://github.com/belthesar"
-# email = "cody@codywilson.co"
+    # Call to Action Section on About Page
+    [params.cta]
+        enable  = true
+        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+        title   = "Let's Create Something Together"
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        btnText = "Contact Us"
+
+    # Contact Section
+    [params.contact]
+        enable  = true
+        topTitle= "WOULD YOU LIKE TO KNOW MORE?"
+        title   = "Contact Us"
+        subtitle= "Kajar Labs is always looking for partners, collaborators, and folks with problems that need solved."
+        address = "Durham, North Carolina, United States"
+        phone   = "(309) 644 4703"
+        # fax     = "+61 3827 3590"
+        facebook= "https://www.facebook.com/kajarlabs"
+        twitter = "https://twitter.com/kajarlabs"
+        # linkedin= "https://www.linkedin.com/"
+        # dribbble= "https://dribbble.com/"
+        # instagram= "https://www.instagram.com/"
+        mapLatitude = "35.994"
+        mapLongitude= "-78.8986"
+        mapMarker   = "images/marker.png"
+    
+    [params.service]
+        enable = true
+        title = "Services Yo"
