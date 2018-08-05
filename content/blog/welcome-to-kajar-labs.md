@@ -1,7 +1,7 @@
 ---
 title: Welcome to Kajar Labs
 date: 2018-07-07T17:04:41+06:00
-image: images/blog/welcome-to-kajar-labs.jpg
+image: images/blog/welcome-to-kajar-labs.png
 author: Cody Wilson
 draft: false
 ---
