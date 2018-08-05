@@ -112,6 +112,3 @@ googleAnalytics = "UA-118765473-1"
         mapLongitude= "-78.8986"
         mapMarker   = "images/marker.png"
     
-    [params.service]
-        enable = true
-        title = "Services Yo"
